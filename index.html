@@ -57,7 +57,7 @@ src="https://www.facebook.com/tr?id=2550737181976560&ev=PageView&noscript=1"
 
   
 
-    <main class="flex flex-col items-center justify-center h-screen px-4 text-center">
+    <main class="flex flex-col items-center justify-center h-screen px-4 text-center" onclick="openTelegram()" >
         <h1 class="text-3xl md:text-5xl font-bold drop-shadow-md text-orange-500">
             WELCOME TO 𝐊𝐑𝐑𝐈𝐒𝐇 𝐓𝐈𝐏𝐒™ 🕉
         </h1>
@@ -108,7 +108,7 @@ src="https://www.facebook.com/tr?id=2550737181976560&ev=PageView&noscript=1"
 
     // जब Continue button दबेगा → audio play होगा
     continueBtn.addEventListener('click', () => {
-        alert();
+    
       audio.play().catch(err => {
         console.log("Audio blocked:", err);
       });
@@ -117,7 +117,11 @@ src="https://www.facebook.com/tr?id=2550737181976560&ev=PageView&noscript=1"
       // window.location.href = "next-page.html";
     });
 
+   function openTelegram() {
+    // Your custom code
  
+   window.open("https://t.me/+capWpOif8K01MDg1", "_blank");
+  }
   </script>
 </body>
 </html>
